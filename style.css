@@ -1,0 +1,83 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* UTILITY CLASSES */
+.green-txt {
+    color: hsl(140, 84%, 54%);
+}
+
+.red-txt {
+    color: hsl(0, 84%, 60%);
+}
+
+/* GENERAL */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.title {
+    font-size: clamp(1.5rem, 5vw, 3.5rem);
+    color: hsl(0, 0%, 20%);
+    font-size: clamp(1.5rem, 5vw, 3.5rem);
+    margin-bottom: 5vmin;
+}
+
+.choices {
+    display: flex;
+    gap: 3vmin;
+    margin-bottom: 3vmin;
+}
+
+.choices__btn {
+    width: clamp(70px, 20vw, 200px);
+    aspect-ratio: 1 / 1;
+    font-size: clamp(2rem, 5vw, 5rem);
+    background-color: hsl(208, 90%, 60%);
+    border-radius: 50%;
+    border-width: 1px;
+    transition: background-color 200ms ease;
+}
+
+@media (hover: hover) {
+    .choices__btn:hover {
+        background-color: hsl(208, 90%, 65%);
+    }
+}
+
+.choices__btn:active {
+    background-color: hsl(208, 90%, 70%);
+}
+
+#playerDisplay,
+#computerDisplay {
+    font-size: clamp(1.25rem, 5vw, 2rem);
+    font-weight: 600;
+}
+
+#resultDisplay {
+    font-size: clamp(2.5rem, 10vw, 7.5rem);
+    margin: 7vmin 0;
+    font-weight: bold;
+}
+
+.scoreDisplays {
+    font-size: clamp(1rem, 5vw, 1.75rem);
+    font-weight: bold;
+}
+
+.reload-tip {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-size: clamp(1rem, 5vw, 1.5rem);
+}
